@@ -36,7 +36,7 @@ webApp.use(async function (ctx) {
             ul.push(`<li><a href="${path.join(filePath, files[i])}">${files[i]}</a>`)
         }
         ul.push("</ul>");
-        let html = ['<html>', '<head>', '<title>文件服务器</title>', '</head>', '<body>'].concat(ul);
+        let html = ['<html>', '<head>', '<title>文件服务器</title>', '</head>', '<body>',`<div>共有文件（目录） ${files.length} 个。</div>`].concat(ul);
         html.push('</body>');
         html.push('</html>');
         ctx.response.type = "html";
