@@ -1,0 +1,24 @@
+{
+  "name": "koa-static-server",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "env-loador nodemon app.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "koa": "^2.13.1",
+    "koa-body": "^4.2.0",
+    "koa-router": "^10.0.0",
+    "koa-sendfile": "^3.0.0",
+    "koa-static": "^5.0.0",
+    "log4js": "^6.3.0"
+  },
+  "devDependencies": {
+    "env-loador": "0.0.4",
+    "nodemon": "^2.0.7"
+  }
+}
